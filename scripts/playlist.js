@@ -1,4 +1,13 @@
 let path = window.location.pathname;
+{
+  if (path != "index.html") {
+    path = "yeet/index.html";
+  }
+}
+
+// Ignore everything above. It onöy for github and live server.
+
+//let path = window.location.pathname;
 let page = path.split("/").pop();
 
 console.log(page);
@@ -6,7 +15,6 @@ let playlist;
 
 // Links
 {
-
   if (page == "index.html") {
     playlist = [
       {
@@ -20,7 +28,7 @@ let playlist;
       {
         name: "Video 3",
         src: "./videos/v3.mp4",
-      }
+      },
     ];
   } else if (page == "otherpage.html") {
     playlist = [
@@ -35,7 +43,7 @@ let playlist;
       {
         name: "Video 1",
         src: "./videos/v1.mp4",
-      }
+      },
     ];
   }
 }
