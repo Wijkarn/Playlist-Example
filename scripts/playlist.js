@@ -1,11 +1,8 @@
 let path = window.location.pathname;
-{
-  if (path != "index.html") {
-    path = "yeet/index.html";
-  }
+if (path != "yeet") {
+  path = "yeet/index.html";
 }
-
-// Ignore everything above. It onöy for github and live server.
+// Code above is only for then the address bar doesn't end with a ".html" , remove if your using code and uncomment the next comment.
 
 //let path = window.location.pathname;
 let page = path.split("/").pop();
@@ -13,7 +10,7 @@ let page = path.split("/").pop();
 console.log(page);
 let playlist;
 
-// Links
+// Links. Change these to your own links.
 {
   if (page == "index.html") {
     playlist = [
