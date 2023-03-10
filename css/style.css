@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    background-color: #080808;
+}
+
+.hidden {
+    opacity: 0;
+    padding: 0;
+}
+
+img.site {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: darkgray;
+    font-size: clamp(1.5rem, 1.5vw, 4rem);
+    padding-bottom: 5px;
+}
+
+h1.title {
+    padding: 10px;
+}
+
+a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+a.vid {
+    flex-basis: 31%;
+    margin: 1% 1.16%;
+}
+
+a.source {
+    margin: 0;
+    font-size: 9px;
+    padding: 0.8%;
+}
+
+a.youtube {
+    margin-left: 48.3vw;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: row nowrap;
+    color: darkgray;
+    background-color: #1b1b1b;
+    height: 60px;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+p {
+    width: 25%;
+}
+
+iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+video {
+    width: 100%;
+    max-height: 100vh;
+}
+
+img,
+video,
+iframe {
+    border-radius: 1vw;
+    border: #1b1b1b 2px solid;
+}
+
+article {
+    width: 85%;
+    margin-bottom: 2%;
+}
+
+div.videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.site {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #1b1b1b;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 70px;
+}
+
+nav a {
+    color: darkgray;
+    text-align: center;
+    text-decoration: none;
+    font-size: clamp(0.8rem, 1vw, 2rem);
+    border-radius: 0.6vw;
+    margin: 0 0.2%;
+    padding: 0.5% 0.75%;
+}
+
+nav a.logo {
+    font-size: clamp(1.5rem, 1.7vw, 4rem);
+    font-weight: bold;
+    height: fit-content;
+    margin: 0 1%;
+    padding: 0.25% 1%;
+}
+
+nav a:hover {
+    background-color: black;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #999999;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    border: #999999 solid 2px;
+}
+
+#topBtn:hover {
+    background-color: #1b1b1b;
+    color: black;
+}
+
+.fourImagesDiv {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.fourImages{
+    max-width: 49.5%;
+    margin-top: 1%;
+    border-radius: 10px;
+}
+
+img.fourTop{
+    margin-top: 0;
+}
+
+.fourBottom{
+    margin-bottom: 0;
+}
+
+/* ----------------Slideshow------------------*/
+.mySlides,
+.mySlides1,
+.mySlides2 {
+    display: none;
+    margin-inline: auto;
+}
+
+img.mySlides{
+    max-height: 90vh;
+    margin-inline: auto;
+    max-width: 100%;
+}
+
+div.mySlides1,
+div.mySlides2 {
+    max-width: 85%;
+}
+
+img.slide {
+    max-height: 90vh;
+    display: block;
+    margin-inline: auto;
+    max-width: 100%;
+}
+
+/* Manaul slideshow container */
+.manualSlideshow {
+    max-width: 100%;
+    max-height: 90vh;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #3b3b3b;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+    background-color: rgba(241, 241, 241, 0.3);
+    color: black;
+}
+
+/* ----------------PLAYLIST------------------*/
+
+/* (B) WRAPPER */
+#playlistDiv {
+    font-family: arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 85%;
+    margin-inline: auto;
+    background-color: 0;
+}
+
+/* (F1) HIDE DEFAULT */
+#playlistDiv input[type="range"] {
+    box-sizing: border-box;
+    appearance: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    background: 0;
+}
+
+#playlistDiv input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+}
+
+/* (F2) CUSTOM SLIDER TRACK */
+#playlistDiv input[type=range]::-webkit-slider-runnable-track {
+    background: #626262;
+    border-radius: 10px;
+}
+
+#playlistDiv input[type=range]::-moz-range-track {
+    background: #626262;
+    border-radius: 10px;
+}
+
+/* (I) PLAYLIST LIST*/
+#playlistList {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    color: #7e7e7e;
+    background: #272727;
+}
+
+.vRow {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.vRow.now {
+    color: darkgray;
+}
