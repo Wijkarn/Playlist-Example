@@ -10,15 +10,6 @@ body {
     background-color: #080808;
 }
 
-.hidden {
-    opacity: 0;
-    padding: 0;
-}
-
-img.site {
-    width: 100%;
-}
-
 h1 {
     text-align: center;
     color: darkgray;
@@ -33,42 +24,6 @@ h1.title {
 a {
     color: darkgray;
     text-decoration: none;
-}
-
-a.vid {
-    flex-basis: 31%;
-    margin: 1% 1.16%;
-}
-
-a.source {
-    margin: 0;
-    font-size: 9px;
-    padding: 0.8%;
-}
-
-a.youtube {
-    margin-left: 48.3vw;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: row nowrap;
-    color: darkgray;
-    background-color: #1b1b1b;
-    height: 60px;
-    text-align: center;
-    margin-top: 2vh;
-}
-
-p {
-    width: 25%;
-}
-
-iframe {
-    width: 100%;
-    aspect-ratio: 16/9;
 }
 
 video {
@@ -93,12 +48,6 @@ div.videos {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-div.site {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 nav {
@@ -130,114 +79,6 @@ nav a.logo {
 
 nav a:hover {
     background-color: black;
-}
-
-#topBtn {
-    display: none;
-    position: fixed;
-    bottom: 60px;
-    right: 20px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: black;
-    color: #999999;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-    border: #999999 solid 2px;
-}
-
-#topBtn:hover {
-    background-color: #1b1b1b;
-    color: black;
-}
-
-.fourImagesDiv {
-    width: 100%;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
-    align-content: space-around;
-}
-
-.fourImages{
-    max-width: 49.5%;
-    margin-top: 1%;
-    border-radius: 10px;
-}
-
-img.fourTop{
-    margin-top: 0;
-}
-
-.fourBottom{
-    margin-bottom: 0;
-}
-
-/* ----------------Slideshow------------------*/
-.mySlides,
-.mySlides1,
-.mySlides2 {
-    display: none;
-    margin-inline: auto;
-}
-
-img.mySlides{
-    max-height: 90vh;
-    margin-inline: auto;
-    max-width: 100%;
-}
-
-div.mySlides1,
-div.mySlides2 {
-    max-width: 85%;
-}
-
-img.slide {
-    max-height: 90vh;
-    display: block;
-    margin-inline: auto;
-    max-width: 100%;
-}
-
-/* Manaul slideshow container */
-.manualSlideshow {
-    max-width: 100%;
-    max-height: 90vh;
-    position: relative;
-    margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: #3b3b3b;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a grey background color */
-.prev:hover,
-.next:hover {
-    background-color: rgba(241, 241, 241, 0.3);
-    color: black;
 }
 
 /* ----------------PLAYLIST------------------*/
